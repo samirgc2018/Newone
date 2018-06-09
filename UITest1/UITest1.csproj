@@ -39,6 +39,10 @@
     <PackageReference Include="NUnitTestAdapter" Version="2.1.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\App25\App25.Android\App25.Android.csproj">
+      <Project>{daded839-77bf-4676-a7b8-efb4371586b3}</Project>
+      <Name>App25.Android</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests.cs" />
