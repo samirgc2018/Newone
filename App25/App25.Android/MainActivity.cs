@@ -6,6 +6,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace App25.Droid
 {
@@ -18,7 +21,7 @@ namespace App25.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
+            AppCenter.Start("7b2206cb-5a4e-4825-8822-bffe399fa3c7", typeof(Analytics), typeof(Crashes));
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
